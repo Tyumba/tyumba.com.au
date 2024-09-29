@@ -1,0 +1,13 @@
+description: "Tyumba"
+publisher: "Tyumba Pty Ltd"
+keywords: "Macadamia, Macadamia Nuts, Byron, Northern Rivers, Tyumba"
+title: "Tyumba"
+
+name: "Tyumba"
+
+email: "email@tyumba.com"
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-redirect-from
