@@ -3,9 +3,24 @@ publisher: "Tyumba Pty Ltd"
 keywords: "Macadamia, Macadamia Nuts, Byron, Northern Rivers, Tyumba"
 title: "Tyumba"
 
-name: "Tyumba"
+biz_name: "Tyumba"
 
-email: "email@tyumba.com"
+biz_abn: "63&nbsp;133&nbsp;191&nbsp;572"
+
+biz_addr: "10 Kirklands Ln"
+biz_addr_city: "Teven"
+biz_addr_state: "NSW"
+biz_addr_code: "2478"
+
+biz_addr_map: "https://maps.app.goo.gl/VwR2pU7YuJcDR2Ng8"
+
+biz_post_box: "PO&nbsp;Box&nbsp;263"
+biz_post_city: "Bangalow"
+biz_post_state: "NSW"
+biz_post_code: "2479"
+
+biz_phone: "(02)&nbsp;9262&nbsp;2822"
+biz_email: "email@tyumba.com"
 
 permalink: /:categories/:title/
 
