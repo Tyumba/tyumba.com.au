@@ -2,14 +2,30 @@
 layout: default
 permalink: /contact/
 
-title: "Macadamia."
-subtitle: "Just Nuts."
+title: "Contact."
+subtitle: "Who's Nuts?"
 lead:
 
 ---
 <section class="w-50 p-3 my-5 mx-auto">
-	<div class="bg-body-secondary bg-opacity-75 shadow-lg rounded py-3 px-5">
-		<h3>Contact</h3>
-{% include contact.html %}
+	<div class="row bg-body-secondary bg-opacity-75 shadow-lg rounded py-3 px-5">
+	<div id="phone" class="col-sm-4 text-center position-relative">
+		<svg class="icon m-3" width="10em" height="10em" fill="var(--bs-warning)" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+			<path id="fa-map-location-dot" d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152l0 270.8c0 9.8-6 18.6-15.1 22.3L416 503l0-302.6zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6l0 251.4L32.9 502.7C17.1 509 0 497.4 0 480.4L0 209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77l0 249.3L192 449.4 192 255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+		</svg>
+		<p><a href="tel:{{site.biz_addr_map}}" class="text-reset text-decoration-none stretched-link">{{site.biz_addr | replace: '&nbsp;' , ' '}}<br>{{site.biz_addr_city}}&nbsp;&nbsp;{{site.biz_addr_state}}&nbsp;&nbsp;{{site.biz_addr_code}}</a></p>
+	</div>
+	<div id="email" class="col-sm-4 text-center position-relative">
+		<svg class="icon m-3" width="10em" height="10em" fill="var(--bs-success)" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+			<path id="fa-envelope-o" d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z" />
+		</svg>
+		<p><a href="mailto:{{site.biz_email}}" class="text-reset text-decoration-none stretched-link">{{site.biz_email}}</a></p>
+	</div>
+	<div id="post" class="col-sm-4 text-center position-relative">
+		<svg class="icon m-3" width="10em" height="10em" fill="var(--bs-info)" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+			<path id="fa-inbox" d="M1151 960h316q-1-3-2.5-8.5t-2.5-7.5l-212-496h-708l-212 496q-1 3-2.5 8.5t-2.5 7.5h316l95 192h320zm513 30v482q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-482q0-62 25-123l238-552q10-25 36.5-42t52.5-17h832q26 0 52.5 17t36.5 42l238 552q25 61 25 123z" />
+		</svg>
+		<p>{{site.biz_post_box | replace: '&nbsp;' , ' '}}<br>{{site.biz_post_city}}&nbsp;&nbsp;{{site.biz_post_state}}&nbsp;&nbsp;{{site.biz_post_code}}</p>
+	</div>
 	</div>
 </section>
