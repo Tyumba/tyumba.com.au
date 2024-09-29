@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{site.description}}">
+<meta name="publisher" content="{{site.publisher}}">
+<meta name="keywords" content="{{site.keywords}}">
+<link rel="icon" href="data:,">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" integrity="sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=" crossorigin="anonymous">
+<title>
+	{{site.title}}
+</title>
+<style>
+#navbar-toggle-cbox {
+	display:none;
+}
+#navbar-toggle-cbox:checked ~ .collapse {
+	display: block;
+}
+body {
+	background-image: url("/img/main.jpg");
+	background-size: 100% 100%;
+}
+</style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+{% include header.html %}
+
+<div id="content" class="container">
+
+{{ content }}
+
+</div> <!-- End of content -->
+
+{% include footer.html %}
+
+</body>
+<script src="/js/color-modes.js"></script>
+</html>
